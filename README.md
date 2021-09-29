@@ -9,7 +9,7 @@ and comment on other developers' posts. This app follows the MVC paradigm,
 utilizes handlebars as the templating language, Sequelize as the ORM, and the
 express-session npm package for authentication.
 
-![](Resources/) ![](Resources)
+![](resources/code-snippet2.PNG)
 
 ## Table of Contents
 
@@ -27,7 +27,7 @@ express-session npm package for authentication.
 
 - You are using a Linux, Mac or Windows machine.,\* You have a basic
   understanding of MVC paradigm, Javascript, Sequelize and Express.
-  ![](Resources/)
+  ![](resources/code-snippet1.PNG)
 
 ## Prerequisites
 
@@ -42,7 +42,7 @@ you are ready to use the application!
 
 ## Usage
 
-After installing the project, deploy to Heroku by 
+After installing the project, deploy to Heroku by
 
 ## Licensing
 
@@ -73,4 +73,3 @@ https://www.npmjs.com/package/sequelize-typescript
 My name is Nikki Mounce
 Reach me with additional questions: nikkicancode@gmail.com
 Check out my GitHub: github.com/Nmounce
-
