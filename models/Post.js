@@ -5,11 +5,11 @@ const {
 const sequelize = require('../config/connection.js');
 //dont need bcrypt bc we dont need to hash the data
 
-class BlogPost extends Model {
+class Post extends Model {
 
 }
 
-BlogPost.init({
+Post.init({
     id: {
         type: DataTypes.INTEGER,
         allowNull: false,
@@ -23,28 +23,23 @@ BlogPost.init({
             len: [1, 50]
         }
     },
-    entry: {
+    content: {
         type: DataTypes.TEXT,
         allowNull: false,
     },
-    date: {
-        type: DataTypes.DATE,
-        allowNull: false,
-        defaultValue: DataTypes.NOW,
-    },
-    author: {
+    user_id: {
         type: DataTypes.INTEGER,
         references: {
             model: 'user',
             key: 'id',
         }
-    },
+    }
 }, {
     sequelize,
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: "blogpost",
+    modelName: "post",
 });
 
-module.exports = BlogPost;
+module.exports = Post;
