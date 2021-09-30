@@ -69,5 +69,5 @@
 //     res.render('register');
 // });
 
-
+// 
 // module.exports = router;
